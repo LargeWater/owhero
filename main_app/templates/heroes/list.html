@@ -1,16 +1,19 @@
 {% extends 'base.html' %}
 {% load static %}
-<link rel="stylesheet" href="{% static 'css/heroes/hero-list.css' %}">
+{% block head %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/heroes/hero-list.css' %}">
+{% endblock %}
 {% block content %}
 
 <h1>Heroes</h1>
-
+<div class='hero-list'>
 {% for hero in heroes %}
 <div class="card" style="width:25rem;">
   <a href ="/heroes/{{hero.name}}">
     <div class="card-body">
       <h4 class="card-title">{{ hero.name }}</h4>
       <img src="{{ hero.portrait }}" alt="{{ hero.name }}" class="card-img-top">
+      <h5>{{ hero.role }}</h5>
       {% comment %} <h6 class="card-subtitle mb-2 text-muted">{{ place.lat }}, {{ place.lng }}</h6> {% endcomment %}
       {% comment %} <h5 class="card-title">{{ place.description }}</h5> {% endcomment %}
       {% comment %} <p class="card-text">This location was created by {{ place.user }}</p> {% endcomment %}
@@ -18,5 +21,5 @@
   </a>
 </div>
 {% endfor %}
-
+</div>
 {% endblock %}

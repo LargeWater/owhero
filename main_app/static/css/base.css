@@ -133,9 +133,9 @@ nav li {
 } */
 
 
-.navbar-dark:hover, .navbar-nav:hover, .nav-link.active:hover, .navbar-dark .navbar-nav .show>.nav-link:hover{
+/* .navbar-dark:hover, .navbar-nav:hover, .nav-link.active:hover, .navbar-dark .navbar-nav .show>.nav-link:hover{
   color: #5c98d1;
-}
+} */
 
 .navbar-nav .nav-link.active, .navbar-nav .show>.nav-link {
   color:#F4F0EA;
@@ -146,6 +146,6 @@ body{
   font-family: 'Mulish', sans-serif;
 }
 
-.nav-link.active:hover{
+/* .nav-link.active:hover{
   color: #5c98d1;
-}
+} */

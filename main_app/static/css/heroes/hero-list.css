@@ -1,6 +1,15 @@
-main{
+.hero-list{
   justify-content: center;
   align-items: center;
   display: flex;
   flex-wrap: wrap;
+  flex-direction: row;
+  @font-face {
+    font-family: bignoodletoo;
+    src: url(bignoodletoo.ttf);
+  }
+}
+
+.card{
+  margin: 10px;
 }
