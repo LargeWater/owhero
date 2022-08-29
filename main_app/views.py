@@ -1,5 +1,7 @@
+from django.views.generic.list import ListView
 from django.shortcuts import render
 from django.http import HttpResponse
+from .filters import HeroFilter
 
 def home(request):
   return render (request, 'home.html')
@@ -58,3 +60,14 @@ heroes = [
 
 def hero_list(request):
   return render(request, 'heroes/list.html', {'heroes': heroes})
+
+
+
+# class HeroListView(ListView):
+#   model = Hero
+#   template_name = 'heroes/list.html'
+
+#   def get_context_data(self, **kwargs):
+#     context = super().get_context_data(**kwargs)
+#     context['filter'] = HeroFilter(self.request.GET, queryset=self.get_queryset())
+#     return context
