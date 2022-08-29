@@ -6,7 +6,7 @@
   flex-direction: row;
   @font-face {
     font-family: bignoodletoo;
-    src: url(bignoodletoo.ttf);
+    source: url(../fonts/bignoodletoo.ttf) !important;
   }
 }
 
