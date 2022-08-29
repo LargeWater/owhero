@@ -52,8 +52,7 @@ body {
 } */
 
 nav {
-  background: rgb(0,46,44);
-  background: linear-gradient(180deg, rgba(0,46,44,1) 0%, rgba(0,27,26,1) 99%);
+background-color: #f6f6f6;
   font-size: 4ch;
 }
 
@@ -138,7 +137,7 @@ nav li {
 } */
 
 .navbar-nav .nav-link.active, .navbar-nav .show>.nav-link {
-  color:#F4F0EA;
+  color:#1a325e;
   font-family: 'Philosopher', sans-serif;
 }
 

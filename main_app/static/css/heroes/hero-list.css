@@ -1,15 +1,31 @@
+@font-face {
+  font-family: 'bignoodletoo';
+  src: url('../../fonts/bignoodletoo.ttf');
+  font-family: 'bntilt';
+  src: url('../../fonts/bntilt.ttf');
+}
+
 .hero-list{
   justify-content: center;
   align-items: center;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  @font-face {
-    font-family: bignoodletoo;
-    source: url(../fonts/bignoodletoo.ttf) !important;
-  }
 }
 
 .card{
   margin: 10px;
+  background-color: rgba(19,42,77,.85);
+}
+
+.card-title{
+  font-family: 'bntilt';
+  font-size: 36px;
+  color: #f6f6f6;
+}
+
+.card > a{
+  text-decoration: none;
+  background-image: url('../../images/owport.jpeg');
+  background-repeat: round;
 }
