@@ -2,6 +2,7 @@ from django.views.generic.list import ListView
 from django.shortcuts import render
 from django.http import HttpResponse
 from .filters import HeroFilter
+from .models import Hero
 
 def home(request):
   return render (request, 'home.html')

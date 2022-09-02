@@ -11,6 +11,9 @@ class Hero(models.Model):
   background = models.CharField(max_length=200)
   portrait = models.CharField(max_length=200)
 
+  def __str__(self):
+    return self.name
+
 
 # class Hero(models.Model):
 #   def __init__(self, name, role, rating, description, weapon, abilities, background, portrait):
