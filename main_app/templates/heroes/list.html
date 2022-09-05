@@ -9,7 +9,7 @@
 <div class='hero-list'>
 {% for hero in heroes %}
 <div class="card" style="width:25rem;">
-  <a href ="/heroes/{{hero.name}}">
+  <a href ="{% url 'hero_detail' hero.id %}">
     <div class="card-body">
       <h4 class="card-title">{{ hero.name }}</h4>
       <img src="{{ hero.portrait }}" alt="{{ hero.name }}" class="card-img-top">

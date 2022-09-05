@@ -7,7 +7,7 @@ class Hero(models.Model):
   rating = models.IntegerField()
   description = models.CharField(max_length=500)
   weapon = models.CharField(max_length=50)
-  abilties = models.CharField(max_length=200)
+  abilities = models.CharField(max_length=200)
   background = models.CharField(max_length=200)
   portrait = models.CharField(max_length=200)
 
