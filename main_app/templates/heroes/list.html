@@ -3,7 +3,7 @@
 {% block head %}
 <link rel="stylesheet" type="text/css" href="{% static 'css/heroes/hero-list.css' %}">
 {% block mycss %} 
-<style> .hero-container{ background-image: url('{{hero.background}}') }</style> 
+<style> .hero-container{ background-image: url({{hero.background}}) }</style> 
 {% endblock %}
 
 {% endblock %}
