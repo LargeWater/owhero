@@ -17,11 +17,13 @@
   </div>
   <div class="hero-details">
     <h1>{{ hero.name }}</h1>
-      <h2>{{ hero.role}}</h2>
-      <h2>{{ hero.rating}}</h2>
-      <h3>{{ hero.description }}</h3>
-      <h3>{{ hero.weapon }}</h3>
-      <h3>{{ hero.abilities }}</h3>
+    <div class='hero-basic'>
+      <h2>Role: {{ hero.role}}</h2>
+      <h2>Difficulty: {{ hero.rating}}</h2>
+    </div>
+    <h3>{{ hero.description }}</h3>
+    <h3>Weapon(s): {{ hero.weapon }}</h3>
+    <h3>Abilities: {{ hero.abilities }}</h3>
   </div>
 </section>
 
