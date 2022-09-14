@@ -14,6 +14,13 @@ class Hero(models.Model):
   def __str__(self):
     return self.name
 
+  def get_context_data(self, **kwargs):
+    hero_names = Hero.objects.order_by('name')
+    context = super().get_context_data(**kwargs)
+    context['hero'] = hero_names
+    return context
+
+
 
 # class Hero(models.Model):
 #   def __init__(self, name, role, rating, description, weapon, abilities, background, portrait):
